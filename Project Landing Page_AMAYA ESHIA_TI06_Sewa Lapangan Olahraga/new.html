@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Lapangan Olahraga</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="promotion.html">
+    <script src="https://kit.fontawesome.com/fbc910b67e.js" crossorigin="anonymous"></script>
+</head>
+<style> 
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #383838;
+        padding: 10px 0;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: background-color 0.3s;
+    }
+    .navbar a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar" id="home">
+<a href="#home">Home</a>
+<a href="#booking">Reservation</a>
+<a href="#facilities">Menu</a>
+<a href="login.html">Login</a>
+</div>
+
+</body>
+</html>
+<body>
+    <!-- <nav id="form">
+        <p><a href="login.html">Login</a></p>
+    </nav> -->
+    <header class="hero">
+        <div class="container">
+            <h1>Sewa Lapangan Olahraga Mayestick</h1>
+            <p>Sewa lapangan olahraga dengan fasilitas lengkap, nyaman, dan cepat!</p>
+            <a href="#booking" class="btn-primary">Pesan Sekarang</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="promo-header">
+            <h1>Limited Time Offer!</h1>
+            <p>Get the best deals on our products and services. Don't miss out!</p>
+            <a href="#details">Learn More</a>
+        </div>
+    
+        <div class="promo-content" id="details">
+            <h2>Why Choose Us?</h2>
+            <div class="promo-grid">
+                <div class="promo-item">
+                    <img src="image/kok.jpeg" alt="Quality">
+                    <h3>Top Quality</h3>
+                    <p>We provide the highest quality sports field to make your best experience.</p>
+                </div>
+                <div class="promo-item">
+                    <img src="image/bola basket.jpeg" alt="Affordable">
+                    <h3>Affordable Prices</h3>
+                    <p>Enjoy premium services and facilities at the most competitive rates.</p>
+                </div>
+                <div class="promo-item">
+                    <img src="image/bola tennis.jpg" alt="Support">
+                    <h3>Good Facilities</h3>
+                    <p>Our team is here to assist you anytime, anywhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami hadir untuk memenuhi kebutuhan Anda akan tempat olahraga yang nyaman dan mudah diakses. Dengan berapa lapangan olahraga seperti Basket, Futsal, Tennis, dan Badminton. Kami siap mengakomodasi berbagai kegiatan olahraga Anda dengan fasilitas yang lengkap mulai dari Toilet, Ruang Bilas, Musholla, Ruang Ganti, dan Kantin. Nikmati pengalaman bermain yang menyenangkan dengan fasilitas lengkap dan perawatan lapangan yang optimal.</p>
+        </div>
+    </section>
+
+    <section id="facilities" class="facilities-section">
+        <div class="container">
+            <h2>Fasilitas Kami</h2>
+            <div class="facilities-list">
+                <div class="facility">
+                    <img src="image/badminton.jpeg" alt="Lapangan Futsal">
+                    <h3>Lapangan Badminton</h3>
+                    <h4>80.000 / Jam</h4>
+                    <p>Lapangan badminton impian Anda kini hadir! Dilengkapi dengan fitur unggulan, seperti penerangan yang cukup, dinding penyerap suara, dan lantai anti slip. Garansi kualitas dan awet.</p>
+                </div>
+                <div class="facility">
+                    <img src="image/futsal.jpg" alt="Lapangan Futsal">
+                    <h3>Lapangan Futsal</h3>
+                    <h4>85.000 / Jam</h4>
+                    <p>Tingkatkan performa futsal Anda di lapangan berkualitas tinggi ini. Permukaan yang nyaman memberikan grip bola yang optimal. Cocok untuk semua level pemain, tidak lupa dengan fasilitas yang lengkap.</p>
+                </div>
+                <div class="facility">
+                    <img src="image/Basket.jpg" alt="Lapangan Basket">
+                    <h3>Lapangan Basket</h3>
+                    <h4>80.000 / Jam</h4>
+                    <p>Lapangan basket kami siap menemani aktivitas olahraga Anda. Dengan permukaan yang nyaman untuk kaki, Anda bisa bermain dengan bebas tanpa khawatir cedera. Dapatkan pengalaman bermain yang menyenangkan di sini!</p>
+                </div>
+                <div class="facility">
+                    <img src="image/Tennis.jpg" alt="Lapangan Badminton">
+                    <h3>Lapangan Tennis</h3>
+                    <h4>95.000 / Jam</h4>
+                    <p>Lapangan tenis berkualitas tinggi, siap pakai! Dimensi standar internasional, permukaan lapangan yang nyaman, dilengkapi net dan tiang kokoh. Cocok untuk pribadi maupun komersial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2>Pesan Sekarang</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="jam">Jam Main</label>
+                    <input type="datetime-local" name="jam" id="jam">
+                </div>
+                <div class="form-group">
+                    <label for="lapangan">Pilih Lapangan:</label>
+                    <select id="lapangan" name="lapangan" required>
+                        <option value="futsal">Futsal</option>
+                        <option value="basket">Basket</option>
+                        <option value="badminton">Badminton</option>
+                        <option value="tennis">Tennis</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="image/Amaya.jpg" alt="Amaya">
+            <h3>Amaya Eshia</h3>
+            <p>Amaya Eshia, sering dikenal dengan Amaya. Ia merupakan Mahasiswi Teknik Informatika angkatan 2024 di STT Terpadu Nurul Fikri. Landing Page ini Amaya buat untuk Project Ujian Tengah Semester mata kuliah Pemograman Website. Jika ingin kenal Amaya lebih lanjut, bisa klik logo sosial media di bawah ini.</p>
+            <a href="https://www.instagram.com/amayezh/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/amaya-eshia-869427215/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/amayaesh"><i class="fa-brands fa-github"></i></a>
+            <p>&copy; 2024 Sewa Lapangan Olahraga. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>

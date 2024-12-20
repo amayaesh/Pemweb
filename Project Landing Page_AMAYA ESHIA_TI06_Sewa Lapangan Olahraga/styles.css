@@ -1,0 +1,248 @@
+/* Reset */
+body, h1, h2, h3, p, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+#form {
+    background:#00c6ff
+}
+
+#form p {
+    width: 100px;
+    height: 30px;
+    background-color: #00c6ff; opacity: 100%;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#form a {
+    text-decoration: none;
+    color: #0d715c;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('sports-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent);
+    z-index: 1;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+.btn-primary {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.btn-primary:hover {
+    background: #218838;
+}
+
+/* promotion */
+.promo-header {
+    background: url('https://example.com/promo-banner.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(15, 70, 84);
+    text-align: center;
+}
+
+.promo-header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.promo-header p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.promo-header a {
+    background: #ff5722;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.promo-header a:hover {
+    background: #29728d;
+}
+
+.promo-content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.promo-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.promo-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.promo-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.promo-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.promo-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.promo-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.promo-footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Facilities Section */
+.facilities-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    text-align: center;
+}
+.facilities-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.facility {
+    text-align: center;
+    max-width: 300px;
+}
+.facility img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.facility h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 50px 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+.booking-section form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .container img {
+    width: 150px;
+}
+
+.footer .container a {
+    color: #fff;
+}

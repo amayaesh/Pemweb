@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+}
+
+div {
+    padding: 15vh 0;
+    border: 1px solid black;
+}
+
+.box-1 {
+    background-color: rgb(191, 215, 250);
+    grid-column: 1/6;
+}
+
+.box-2 {
+    background-color: rgb(79, 11, 156);
+}
+
+.box-3 {
+    background-color: rgb(176, 162, 255);
+    grid-column: 2/6;
+}
+
+.box-4 {
+    background-color: rgb(253, 201, 236);
+    grid-column: 2/6;
+}

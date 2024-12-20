@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Promotion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        .promo-header {
+            background: url('https://example.com/promo-banner.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(15, 70, 84);
+            text-align: center;
+        }
+
+        .promo-header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .promo-header p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .promo-header a {
+            background: #ff5722;
+            color: rgb(255, 255, 255);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .promo-header a:hover {
+            background: #29728d;
+        }
+
+        .promo-content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .promo-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .promo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .promo-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .promo-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .promo-item h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        .promo-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .promo-footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .promo-footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-header">
+        <h1>Limited Time Offer!</h1>
+        <p>Get the best deals on our sport services. Don't miss out!</p>
+        <a href="#details">Learn More</a>
+    </div>
+
+    <div class="promo-content" id="details">
+        <h2>Why Choose Us?</h2>
+        <div class="promo-grid">
+            <div class="promo-item">
+                <img src="image/kok badminton.jpeg" alt="Quality">
+                <h3>Top Quality</h3>
+                <p>We provide the highest quality sports field to make your best experience.</p>
+            </div>
+            <div class="promo-item">
+                <img src="image/bola basket.jpeg" alt="Affordable">
+                <h3>Affordable Prices</h3>
+                <p>Enjoy premium services and facilities at the most competitive rates.</p>
+            </div>
+            <div class="promo-item">
+                <img src="image/bola tennis.jpg" alt="Support">
+                <h3>Good Facilities</h3>
+                <p>Our team is here to assist you anytime, anywhere.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="promo-footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

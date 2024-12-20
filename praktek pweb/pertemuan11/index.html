@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar JS</title>
+    <script>
+        function authentication(){
+            const admin = "ahmad2017";
+            const passadmin = "integrity"
+
+            let username = document.getElementById("username").value
+            let password = document.getElementById("password").value
+
+            if (username == admin && password == passadmin){
+                alert("Sukses Login");
+                return true;
+            )else(
+                alert("Gagal Login");
+                //window.location
+            )
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post" action="index.html">
+        username : <input type="text" name="username" id="username">
+        <br>
+        password : <input type="password" name="password" id="password">
+        <br>
+        <input type="submit" value="Login" onclick="authentication()">
+    </form>
+</body>
+</html>

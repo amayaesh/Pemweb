@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            padding: 8px;
+        }
+        input, select {
+            width: 30vw;
+            border: none;
+            height: 5vh;
+        }
+        input:focus, select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table>
+            <tr>
+                <th>Masukkan Nilai</th>
+                <th>Valas</th>
+                <th>Nilai Rupiah</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="inputNilai" oninput="convertCurrency()">
+                </td>
+                <td>
+                    <Select id="selectCurrency" onchange="convertCurrency"> 
+                    <option value="USD">Dollar US</option>
+                    <option value="SGD">Dollar Singapore</option>
+                    <option value="MYR">Ringgit Malaysia</option>
+                    <option value="JPY">Yen Japan</option>
+                    <option value="EUR">Euro</option>
+                    <option value="SAR">Riyal Arab Saudi</option>
+                    </Select>
+                </td>
+                <td>
+                    <input type="number" id="outputRupiah">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script>
+        let nilai = document.getElementById
+        ('inputNilai').value 
+
+        function convertCurrency() {
+            let nilai = document.getElementById('inputNilai').value
+            let valas = document.getElementById('selectCurrency').value
+            let output = document.getElementById('outputRupiah')
+        }
+
+        switch (valas){
+            case 'usd':
+                output.value = nilai * 9915;
+                break;
+            case 'sgd':
+                output,value = nilai * 13472;
+                break;
+            case 'myr':
+                output.value = nilai * 874
+                break;
+            case 'jpy':
+                output.value = nilai * 120
+                break;
+            case 'eur':
+                output.value = nilai * 15888
+                break;
+            case 'sar':
+                output.value = nilai * 3592
+                break;
+        }
+        console.log(nilai);
+        
+    </script>
+</body>
+</html>
